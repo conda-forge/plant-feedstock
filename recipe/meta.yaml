@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/plant/plant/-/archive/v{{ version }}/plant-v{{ version }}.tar.gz
-  sha256: 75b29bb1d80377bece6537771a141484889b1630bace176aa0e17dd19aac879a
+  sha256: 7a8ad0ce1d1de076a9fe761992167e557e05c6b7e3d13ae6618fa4c4294d5736
 
 build:
   noarch: python
