@@ -1,5 +1,5 @@
 {% set name = "plant" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,23 +7,23 @@ package:
 
 source:
   url: https://gitlab.com/plant/plant/-/archive/v{{ version }}/plant-v{{ version }}.tar.gz
-  sha256: 3232b57c21c59153cb54886f6062b5bd73bcc92f1c03b2df215679c9e6c0ff04
+  sha256: eb84ae43ca0a5b29e979139b3c1e8173ef4135a58871c8bc45dc729ce7b20762
 
 build:
   noarch: python
   entry_points:
-    - plant_csv_reader = plant.app.plant_csv_reader:main
-    - plant_display = plant.app.plant_display:main
-    - plant_execute = plant.app.plant_execute:main
-    - plant_filter = plant.app.plant_filter:main
-    - plant_geocode = plant.app.plant_geocode:main
-    - plant_info = plant.app.plant_info:main
-    - plant_jaxafnf = plant.app.plant_jaxafnf:main
-    - plant_ls = plant.app.plant_ls:main
-    - plant_mosaic = plant.app.plant_mosaic:main
-    - plant_radiometric_correction = plant.app.plant_radiometric_correction:main
-    - plant_slantrange = plant.app.plant_slantrange:main
-    - plant_util = plant.app.plant_util:main
+    - plant_csv_reader = plant.app.plant_csv_reader:main_cli
+    - plant_display = plant.app.plant_display:main_cli
+    - plant_execute = plant.app.plant_execute:main_cli
+    - plant_filter = plant.app.plant_filter:main_cli
+    - plant_geocode = plant.app.plant_geocode:main_cli
+    - plant_info = plant.app.plant_info:main_cli
+    - plant_jaxafnf = plant.app.plant_jaxafnf:main_cli
+    - plant_ls = plant.app.plant_ls:main_cli
+    - plant_mosaic = plant.app.plant_mosaic:main_cli
+    - plant_radiometric_correction = plant.app.plant_radiometric_correction:main_cli
+    - plant_slantrange = plant.app.plant_slantrange:main_cli
+    - plant_util = plant.app.plant_util:main_cli
 
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
