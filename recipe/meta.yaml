@@ -1,5 +1,5 @@
 {% set name = "plant" %}
-{% set version = "0.6.4" %}
+{% set version = "0.6.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/plant/plant/-/archive/v{{ version }}/plant-v{{ version }}.tar.gz
-  sha256: a10864ac7c4fbcddc333c4995573e8a18004254b498e1a08463ae8bf4751a332
+  sha256: 09307d5f11a7e66cb4dc8d516c48ae4940657077ce39ee3d14c3eb18017adbc8
 
 build:
   noarch: python
@@ -18,10 +18,8 @@ build:
     - plant_filter = plant.app.plant_filter:main_cli
     - plant_geocode = plant.app.plant_geocode:main_cli
     - plant_info = plant.app.plant_info:main_cli
-    - plant_jaxafnf = plant.app.plant_jaxafnf:main_cli
     - plant_ls = plant.app.plant_ls:main_cli
     - plant_mosaic = plant.app.plant_mosaic:main_cli
-    - plant_radiometric_correction = plant.app.plant_radiometric_correction:main_cli
     - plant_slantrange = plant.app.plant_slantrange:main_cli
     - plant_util = plant.app.plant_util:main_cli
 
