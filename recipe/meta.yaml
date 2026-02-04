@@ -1,5 +1,5 @@
 {% set name = "plant" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/plant/plant/-/archive/v{{ version }}/plant-v{{ version }}.tar.gz
-  sha256: ecc081e6fa4266c46226a208fa9cee9a5f62128bfb19a8b8edd4e2491d638ea4
+  sha256: f2b6c41da07b2bc2a834deff86a0ee119ee61e7df66eaf79240e0206aae62a10
 
 build:
   noarch: python
