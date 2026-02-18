@@ -1,5 +1,5 @@
 {% set name = "plant" %}
-{% set version = "0.7.2" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/plant/plant/-/archive/v{{ version }}/plant-v{{ version }}.tar.gz
-  sha256: f2b6c41da07b2bc2a834deff86a0ee119ee61e7df66eaf79240e0206aae62a10
+  sha256: b0a5b747e51d3a14c1a56fa4b67b27b2a684aa9248e5e9ce7d90ee42ef5a0623
 
 build:
   noarch: python
@@ -37,7 +37,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - setuptools
-    - numpy >=2.0
+    - numpy >=1.25.2
     - poppler
     - gdal
     - h5py
