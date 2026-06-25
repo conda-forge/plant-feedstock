@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/plant/plant/-/archive/v{{ version }}/plant-v{{ version }}.tar.gz
-  sha256: 784b39640f4ed66ac80de66fbdd43de8d391f2ecf28c6d006c248bc309341d58
+  sha256: 78ea4f947d5a55984be0356be1c33940a08dbdd20cb8ee511a61411692747b96
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ build:
     - plant_util = plant.app.plant_util:main_cli
 
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
 
